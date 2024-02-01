@@ -63,10 +63,10 @@ class LinkedList{
 
     clear(){
         this.head = null; 
-        //LinkedList는 애초에 head(첫번째 노드에서 next로 인해 연결되므로 첫번째 node를 null하면 연결이 끊킨다.
-        //이렇게 되면 다른 데이터들을 참조 할 수 없게 되고, 자바스크립트는 참조할 수 없는 데이터는 메모리에서 제거한다.
         this.count = 0;
     }
+    //LinkedList는 애초에 head(첫번째 노드에서 next로 인해 연결되므로 첫번째 node를 null하면 연결이 끊킨다.
+    //이렇게 되면 다른 데이터들을 참조 할 수 없게 되고, 자바스크립트는 참조할 수 없는 데이터는 메모리에서 제거한다.
     
     insertLast(data) {
         this.insertAt(this.count, data);
